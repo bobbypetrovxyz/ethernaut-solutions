@@ -1,66 +1,27 @@
-## Foundry
+## The Ethernaut Solutions with Foundry
 
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
+**https://ethernaut.openzeppelin.com/**
 
-Foundry consists of:
+- **src** folder contains the source code of all levels
+- **script** folder contains the source code of all exploits
 
--   **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
--   **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
--   **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
--   **Chisel**: Fast, utilitarian, and verbose solidity REPL.
 
-## Documentation
+## Setup
 
-https://book.getfoundry.sh/
+Create .env file with the following parameters:
+```
+PRIVATE_KEY=<private key of your wallet>
+MY_ADDRESS=<your wallet address>
 
-## Usage
-
-### Build
-
-```shell
-$ forge build
+SEPOLIA_RPC_URL=https://sepolia.infura.io/v3/7999ca4086074afea3bd7f0822bfad63
+ETHERSCAN_API_KEY=ZSMG235NY762RBAICZVARPXI9C3GQED9860x698c300C435a6827dA6465c62424abDB854cFFf4
 ```
 
-### Test
+## Run the exploit and broadcast to Sepolia testnet
 
+In each solution file (e.g. Level1Solution.s.sol), at the end in the comment there is a forge script execution command ready to be executed in the terminal.
+
+Example:
 ```shell
-$ forge test
-```
-
-### Format
-
-```shell
-$ forge fmt
-```
-
-### Gas Snapshots
-
-```shell
-$ forge snapshot
-```
-
-### Anvil
-
-```shell
-$ anvil
-```
-
-### Deploy
-
-```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
-```
-
-### Cast
-
-```shell
-$ cast <subcommand>
-```
-
-### Help
-
-```shell
-$ forge --help
-$ anvil --help
-$ cast --help
+$forge script script/Level1Solution.s.sol:Level1Solution --broadcast -vvvv --rpc-url sepolia --etherscan-api-key "${ETHERSCAN_API_KEY}"
 ```
