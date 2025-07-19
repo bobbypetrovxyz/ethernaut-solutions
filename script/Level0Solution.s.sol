@@ -17,4 +17,3 @@ contract Level0Solution is Script {
     }
 }
 // forge script script/Level0Solution.s.sol:Level0Solution --broadcast -vvvv --rpc-url sepolia --etherscan-api-key "${ETHERSCAN_API_KEY}"
-// forge script script/Level0Solution.s.sol:Level0Solution --broadcast -vvvv --rpc-url sepolia --private-key f9c0ccd1286802203e3a42d9732e91397cd961da3ad4bba4a085f1d24fcfe191 --etherscan-api-key "${ETHERSCAN_API_KEY}"
