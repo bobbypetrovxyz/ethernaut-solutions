@@ -9,6 +9,7 @@
 ## Setup
 
 Create .env file with the following parameters:
+
 ```
 PRIVATE_KEY=<private key of your wallet>
 MY_ADDRESS=<your wallet address>
@@ -16,6 +17,7 @@ MY_ADDRESS=<your wallet address>
 SEPOLIA_RPC_URL=https://sepolia.infura.io/v3/7999ca4086074afea3bd7f0822bfad63
 ETHERSCAN_API_KEY=ZSMG235NY762RBAICZVARPXI9C3GQED9860x698c300C435a6827dA6465c62424abDB854cFFf4
 ```
+> ***!!! This is only for testing excercises on Sepolia test network. Never put your private key on your file system - https://www.youtube.com/watch?v=VQe7cIpaE54***
 
 ## Run the exploit and broadcast to Sepolia testnet
 
